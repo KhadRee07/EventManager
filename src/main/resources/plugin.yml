@@ -1,0 +1,8 @@
+name: EventManager
+version: ${project.version}
+main: de.langweilerlp.eventmanager.EventManager
+api-version: 1.16
+prefix: PlebCraft
+authors: [LangweilerLP2]
+description: Das Event-Manager Plugin von PlebCraft
+website: PlebCraft.de
