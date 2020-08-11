@@ -25,7 +25,7 @@ public class CommandListener implements Listener {
 
         if (Bukkit.getHelpMap().getHelpTopic(e.getMessage()) == null) {
             e.setCancelled(true);
-            e.getPlayer().sendMessage(main.getPrefix() + "§7Der Befehl §a" + args[0].replace("/", "") +  " §7existiert nicht auf dem Netzwerk");
+            e.getPlayer().sendMessage(main.getPrefix() + "§7Der Befehl §a" + e.getMessage() +  " §7existiert nicht auf dem Netzwerk");
         }
 
     }
