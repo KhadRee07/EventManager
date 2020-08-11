@@ -1,5 +1,6 @@
 package de.langweilerlp.eventmanager;
 
+import de.langweilerlp.eventmanager.listener.CommandListener;
 import de.langweilerlp.eventmanager.listener.HitDelayManager;
 import de.langweilerlp.eventmanager.listener.MotdListener;
 import de.langweilerlp.eventmanager.listener.PlayerJoinListener;
@@ -13,8 +14,9 @@ public class EventManager extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         new HitDelayManager(this);
-       new MotdListener(this);
+        new MotdListener(this);
         new PlayerJoinListener(this);
+        new CommandListener(this);
     }
 
     @Override
